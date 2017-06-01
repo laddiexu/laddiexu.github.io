@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Study material for Apache Spark"
+title: "HelloWord"
 description: ""
-category: misc
+category: tech
 tags: []
 modify: 2017-05-25 14:06:17
 ---
