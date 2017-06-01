@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
-    <head>
-　　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>{{ page.title }}</title>
-</head>
-<body>
-{{ content }}
-</body>
+<html lang="en-us">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include sidebar.html %}
+
+    <div class="content container">
+      {{ content }}
+    </div>
+
+  </body>
 </html>
