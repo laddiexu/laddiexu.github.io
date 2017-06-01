@@ -17,6 +17,3 @@ permalink: /about/
 
 联系我：
 
-+ 职业 - [LinkedIn (领英)](https://www.linkedin.com/in/facaiy)
-+ 生活 - [豆瓣](https://www.douban.com/people/38287482/)
-+ 摄影 - [Flickr](https://www.flickr.com/photos/ningchi/)
