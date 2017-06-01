@@ -4,7 +4,7 @@ title: "Azure ARM Template 部署虚拟机失败的原因查找"
 description: ""
 category: work
 tags: [Azure]
-modify: 2017-05-25 14:06:17
+modify: 2017-05-24 21:37:00
 ---
 
 如果你想用ARM Template来部署和创建虚拟机，但是发现同一份脚本Global Azure部署没有问题，在中国的由21V运营的Azure上部署有问题，有下面几个可能的点可以查看下：

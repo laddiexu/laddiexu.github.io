@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 工作日记
-permalink: /work/
+permalink: /tech/
 ---
 
 <div class="home">
