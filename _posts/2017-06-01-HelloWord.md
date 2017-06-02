@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HelloWord"
+title: "Hello New Blog"
 description: ""
 category: misc
 tags: []
