@@ -2,7 +2,7 @@
 layout: post
 title: "Azure ARM Template 部署虚拟机失败的原因查找"
 description: ""
-category: work
+category: tech
 tags: [Azure]
 modify: 2017-05-24 21:37:00
 ---
