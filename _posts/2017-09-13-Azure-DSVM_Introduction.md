@@ -10,6 +10,7 @@ Azure 中国刚刚发布了一个虚拟机的镜像，叫做 Data Science Virtua
 
 ## 什么是 Data Science Virtual Machine
 用一句话来概括，DSVM 是一个综合性的数据科学家的云端开发测试环境。DSVM 预装和配置好了各种流行的数据科学相关工具，一键部署，马上可用。下图就是 DSVM 的一个概览。DSVM 包含多种语言，数据平台，开发工具，机器学习和人工智能工具，数据获取的工具，以及数据探索及可视化等六大类的工具和组件。
+
 ![组成部分](/assets/20170913/overall.png "组成部分" )
 
 DSVM支持 Windows Server 和 Linux 两种系统版本。并且是没有额外的费用的，使用只需要付相应的虚拟机的钱就可以啦。
@@ -62,6 +63,7 @@ DSVM 典型的使用场景包含以下几种：
 ## 快速开始
 ### 创建 DSVM
 创建 DSVM 非常简单，使用你的账号登录 Azure [门户网站](https://portal.azure.cn), 点击左侧“新建”按钮，在搜索框中搜索 "data science"就会出现 Windows版本和 Linux 版的 DSVM, 选择需要的版本，按步骤创建就可以了。
+
 ![创建 DSVM](/assets/20170913/createvm.png "创建 DSVM" )
 ### 开始使用 Windows DSVM
 创建完成后，就可以像普通的 Windows 虚拟机一样，使用远程桌面登录 DSVM，开始使用。
