@@ -4,7 +4,7 @@ title: "Data Science Virtual Machine 简介"
 description: "Data Science Virtual Machine 简介, Azure"
 category: tech
 tags: [Azure]
-modify: 2017-09-13 15:01:00
+modify: 2017-09-14 14:00:00
 ---
 Azure 中国刚刚发布了一个虚拟机的镜像，叫做 Data Science Virtual Machine (以下简称 DSVM). 本文就是对 DSVM 的一个简单的介绍。
 
