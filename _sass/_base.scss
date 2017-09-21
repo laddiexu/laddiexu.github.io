@@ -212,13 +212,13 @@ pre {
 table {
     margin-bottom: 1rem;
     width: 100%;
-    border-top: 1px solid #000000;
-    border-bottom: 1px solid #000000;
+    border-top: 2px solid #666666;
+    border-bottom: 2px solid #666666;
     border-collapse: collapse;
   }
   
-  tbody > :first-child {
-    border-bottom:1px solid #000000;
+  th {
+    border-bottom:1px solid #666666;
   }
   
 

@@ -57,7 +57,6 @@ DSVM 典型的使用场景包含以下几种：
 |数据平台工具|SQL Server with R server|Y|N|
 ||PostgreSQL|N|Y|
 ||Spark local instance|N|Y|
-|||||
 
 
 ## 快速开始

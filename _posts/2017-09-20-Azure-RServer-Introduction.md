@@ -28,7 +28,7 @@ R Server 支持多种平台，目标是实现数据在哪里，计算就在哪�
 |R Server for Windows| [文档](https://msdn.microsoft.com/en-us/microsoft-r/rserver-install-windows) | [文档](https://msdn.microsoft.com/en-us/microsoft-r/scaler-getting-started-data-import-exploration) |
 |R Server for Hadoop| [文档](https://msdn.microsoft.com/en-us/microsoft-r/rserver-install-hadoop) | [文档](https://msdn.microsoft.com/en-us/microsoft-r/scaler-hadoop-getting-started) |
 |SQL Server Machine Learning Service| [文档](https://msdn.microsoft.com/library/mt696069.aspx) | [文档](https://msdn.microsoft.com/library/mt604885.aspx) |
-||||
+
 
 ## 如何在 Azure 上快速创建 Microsoft R Server
 R Server 可以直接在你的服务器上安装使用，也可以在 Azure 上使用。
