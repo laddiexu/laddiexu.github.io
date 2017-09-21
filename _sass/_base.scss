@@ -204,3 +204,30 @@ pre {
         }
     }
 }
+
+
+/**
+ * Tables
+ */
+table {
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+  }
+  
+  tr.first{
+    border-top:1px solid #000000;
+    border-bottom:1px solid #000000;
+  }
+  
+  td,
+  th {
+    padding: .25rem .5rem;
+    border: 1px solid #e5e5e5;
+  }
+  tbody tr:nth-child(odd) td,
+  tbody tr:nth-child(odd) th {
+    background-color: #f9f9f9;
+  }
+
