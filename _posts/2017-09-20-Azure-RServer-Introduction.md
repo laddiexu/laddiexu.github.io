@@ -24,10 +24,10 @@ R Server 支持多种平台，目标是实现数据在哪里，计算就在哪�
 
 |平台|安装|快速开始|
 |---|--|--|
-|R Server for Linux|[文档](https://msdn.microsoft.com/en-us/microsoft-r/rserver-install-linux-server)|[文档](https://msdn.microsoft.com/en-us/microsoft-r/scaler-getting-started-data-import-exploration)|
-|R Server for Windows|[文档](https://msdn.microsoft.com/en-us/microsoft-r/rserver-install-windows)|[文档](https://msdn.microsoft.com/en-us/microsoft-r/scaler-getting-started-data-import-exploration)|
-|R Server for Hadoop|[文档](https://msdn.microsoft.com/en-us/microsoft-r/rserver-install-hadoop)|[文档](https://msdn.microsoft.com/en-us/microsoft-r/scaler-hadoop-getting-started)|
-|SQL Server Machine Learning Service|[文档](https://msdn.microsoft.com/library/mt696069.aspx)|[文档](https://msdn.microsoft.com/library/mt604885.aspx)|
+|R Server for Linux| [文档](https://msdn.microsoft.com/en-us/microsoft-r/rserver-install-linux-server) | [文档](https://msdn.microsoft.com/en-us/microsoft-r/scaler-getting-started-data-import-exploration) |
+|R Server for Windows| [文档](https://msdn.microsoft.com/en-us/microsoft-r/rserver-install-windows) | [文档](https://msdn.microsoft.com/en-us/microsoft-r/scaler-getting-started-data-import-exploration) |
+|R Server for Hadoop| [文档](https://msdn.microsoft.com/en-us/microsoft-r/rserver-install-hadoop) | [文档](https://msdn.microsoft.com/en-us/microsoft-r/scaler-hadoop-getting-started) |
+|SQL Server Machine Learning Service| [文档](https://msdn.microsoft.com/library/mt696069.aspx) | [文档](https://msdn.microsoft.com/library/mt604885.aspx) |
 ||||
 
 ## 如何在 Azure 上快速创建 Microsoft R Server
