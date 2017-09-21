@@ -240,12 +240,12 @@ table {
   width: 100%;
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
-  border-bottom:1px solid #505050
+  border-bottom:1px solid #505050;
 }
 
 tr.first{
   border-top:1px solid #505050;
-  border-bottom:1px solid #505050
+  border-bottom:1px solid #505050;
 }
 
 td,
