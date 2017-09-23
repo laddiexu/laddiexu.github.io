@@ -10,12 +10,12 @@ modify: 2017-09-20 19:17:00
 ## 什么是 Microsoft R
 R 语言一套完整的数据处理、计算和制图软件系统。R 内置多种统计学及数字分析功能,也可以通过安装包增强。R 是属于 GNU 系统的一个自由、免费、源代码开放的软件，可在多种平台下运行，是目前最火的统计和机器学习工具之一。
 Microsoft R 提供了一系列服务器和工具来填补 R 在企业部署中的功能空白。Microsoft R 产品系列构建在开源 R 之上，以 Microsoft R Server，Microsoft R Client 和 Microsoft R Open 三种形式提供免费和商业的产品。 除了可用于所有 R 用户的超过10,000个标准 R 包之外，Microsoft R Server 和 R Client 还包含额外的 R 包和连接工具，可通过用于实现远程计算环境和远程执行，Web 服务部署，机器学习集成和可扩展的基于集群的解决方案。
+
 |产品名称|功能|
-|---|--|
-|Microsoft R Open|是微软分发的开源的R，是一个完全开源的平台。以前称为 Revulition R Open (RRO)。包含在 Microsoft R Client 和 Microsoft R Server 中|
-|Microsoft R Client|是一个免费的工作站版本。包括了R Server 相同的功能，但是只能用于本地|
+|---|---|
+|Microsoft R Open|是微软分发的开源的 R，是一个完全开源的平台。以前称为 Revulition R Open (RRO)。包含在 Microsoft R Client 和 Microsoft R Server 中|
+|Microsoft R Client|是一个免费的工作站版本。包括了 R Server 相同的功能，但是只能用于本地|
 |Microsoft R Server|是 Microsft R 的旗舰产品。能够支持企业中非常大的负载需求|
-|||
 
 
 ## 什么是 Microsoft R Server
