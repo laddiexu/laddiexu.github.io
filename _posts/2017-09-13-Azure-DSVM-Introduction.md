@@ -52,7 +52,7 @@ DSVM 典型的使用场景包含以下几种：
 ||Juno (Julia IDE)|Y|Y|
 ||Azure SDK|Y|Y|
 ||Azure 存储资源管理器|Y|Y|
-||Power BI Desktop|Y|Y|
+||Power BI Desktop|Y|N|
 ||用于数据浏览的 Apache Drill|Y|Y|
 |数据平台工具|SQL Server with R server|Y|N|
 ||PostgreSQL|N|Y|
