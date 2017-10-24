@@ -21,7 +21,7 @@ C:\protoc-3.4.0-win32\bin
 
 
 3. 
-# For CPU
+# For CPU   
 pip install tensorflow
 # For GPU
 pip install tensorflow-gpu
@@ -38,10 +38,10 @@ sudo pip install matplotlib
 git clone https://github.com/tensorflow/models.git
 
 4. 进入到models文件夹，编译Object Detection API的代码：
-
+``` cmd
 # From tensorflow/models/
 protoc object_detection/protos/*.proto --python_out=.
-
+```
 
 
 
@@ -56,7 +56,9 @@ slim
 ImportError: No module named 'nets'
 
 则需要进一步安装slim，在models-master\slim目录下也运行
+``` python
 python setup.py install
+```
 
 error: could not create 'build': Cannot create a file when that file already exists
 
@@ -69,18 +71,19 @@ error: could not create 'build': Cannot create a file when that file already exi
 
 
 A local training job can be run with the following command:
-
+``` python
 # From the tensorflow/models/research/ directory
 python object_detection/train.py \
     --logtostderr \
     --pipeline_config_path=${PATH_TO_YOUR_PIPELINE_CONFIG} \
     --train_dir=${PATH_TO_TRAIN_DIR}
-
+```
 where ${PATH_TO_YOUR_PIPELINE_CONFIG} points to the pipeline config and ${PATH_TO_TRAIN_DIR} points to the directory in which training checkpoints and events will be written to. By default, the training job will run indefinitely until the user kills it.
 
-
+``` python
 python object_detection/train.py --logtostderr --pipeline_config_path=object_detection/training/ssd_mobilenet_v1_toothpaste.config --train_dir=object_detection/traininglog
 
+```
 
 
 tranfer learning
