@@ -1,13 +1,18 @@
 ---
 layout: post
-title: "Tensorflow Object Detection API 配置运行"
-description: "Tensorflow Object Detection API 配置运行"
+title: "配置运行 Tensorflow Object Detection API "
+description: "配置运行 Tensorflow Object Detection API "
 category: tech
 tags: [DeepLearning, Tensorflow]
-modify: 2017-07-09 17:39:00
+modify: 2017-10-30 17:27:00
 ---
 
-https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
+最近在调研物体识别的项目，发现了谷歌开源的基于TensorFlow的一系列模型示例，其中就包括了 [Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection)。
+本文主要是记录了我配置以及运行自己的数据集过程和一些注意事项。我也是趟了一些坑，希望对读者有所帮助。
+
+## 配置环境
+
+
 
 
 
@@ -96,3 +101,13 @@ https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc
 
 GPU monitor commond
 For Nvidia GPUs there is a tool nvidia-smi that can show memory usage, GPU utilization and temperature of GPU. 
+
+
+## 参考
+参考了以下一些博客文章回答等等，在这里一并表示感谢：
+
++ [谷歌开放的TensorFlow Object Detection API 效果如何？对业界有什么影响？](https://www.zhihu.com/question/61173908)
++ [目标检测笔记二：Object Detection API 小白实践指南](https://zhuanlan.zhihu.com/p/29215867)
++ [How to train your own Object Detector with TensorFlow’s Object Detector API](https://medium.com/towards-data-science/how-to-train-your-own-object-detector-with-tensorflows-object-detector-api-bec72ecfe1d9)
+
+https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
