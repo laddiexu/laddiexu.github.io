@@ -77,7 +77,7 @@ Tensorflow Object Detection API 里自带了ssd, rfcnn, faster_rcnn 在 COCO 数
 
 ![Tensorflow detection model zoo](/assets/20171013/models.png "Tensorflow detection model zoo" )
 
-模型的下载地址为 [Tensorflow detection model zoo]。(https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
+模型的下载地址为 [Tensorflow detection model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)。
 
 在Notebook中，只需要修改 MODEL_NAME 为相应的下载文件夹的名字，就可以尝试不同模型的效果。
 
