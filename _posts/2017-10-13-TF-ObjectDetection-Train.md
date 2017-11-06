@@ -57,6 +57,9 @@ python setup.py install
 ```
 如果出现 *error: could not create 'build': Cannot create a file when that file already exists*，把 *slim/build/* 里面对应的生成文件删除重新安装就可以了。
 
+**这里建议添加 PYTHONPATH, 这样就可以修改代码。添加的方法也很简单，只要创建一个环境变量 *PythonPath*, 设置相应的值就可以了。**
+
+已经安装了 package 位于 python 目录下 *Lib\site-packages*。  
 
 ### 6. 测试安装是否成功
 在 *models/research* 目录下运行以下命令检查安装配置是否成功
