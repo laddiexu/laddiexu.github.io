@@ -104,7 +104,7 @@
     }
 
     $(function() {
-      var Counter = AV.Object.extend("Counter");
+      var Counter = AV.Object.extend("count");
       if ($('.leancloud_visitors').length == 1) {
         // in post.html, so add 1 to hit counts
         addCount(Counter);
