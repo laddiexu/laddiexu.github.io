@@ -8,9 +8,10 @@ layout: default
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
       {% if site.leancloud.enable %}
       <span id="{{ page.url }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
-       <span class="post-meta-item-text"> | 阅读次数:  </span>
+       <span> | 阅读次数:  </span>
        <span class="leancloud-visitors-count"></span>
       </span>
+      {% endif %}
     </p>
   
 
@@ -21,6 +22,6 @@ layout: default
   </div>
 
 
-{% endif %}
+
 
 </article>
