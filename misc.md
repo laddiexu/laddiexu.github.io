@@ -13,6 +13,12 @@ permalink: /misc/
     {% for post in posts_by_modify%}
       <li>
         <span class="post-meta">{{ post.modify | date: "%b %-d, %Y" }}</span>
+        {% if site.leancloud.enable %}
+         <span id="{{ post.url | prepend: site.baseurl }}" class="leancloud_visitors" data-flag-title="{{ post.title }}">
+          <span> | 阅读次数:  </span>
+          <span class="leancloud-visitors-count"></span>
+        </span>
+        {% endif %}
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
