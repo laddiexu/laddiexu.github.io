@@ -23,7 +23,7 @@ modify: 2017-12-08 00:00:00
 * 上表列的是一个近似值，用于简单估算的。
 * 一般可以用 单精度的 FLOPS (Floating-point operations per second,是每秒所执行的浮点运算次数) 来简单评估计算性能。这里没有考虑其它因素的影响，比如显存。显存对深度计算也很重要，影响到能加载的模型大小和 mini-batch 大小等。
 * 数据的来源详见参考[4],[5]。同时参考[6]也验证了 P100 和 1080 的性能在一个数量级上。
-
+* **由于V100采用新一代的GPU架构(NVIDIA Volta)，实际性能是P100的2.5倍左右。（详见参考7）**
 
 ## 参考
 1. [每秒浮点运算次数](https://zh.wikipedia.org/wiki/每秒浮點運算次數)
@@ -32,3 +32,4 @@ modify: 2017-12-08 00:00:00
 4. [Intel Xeon E5-2600 v3 “Haswell” Processor Review](https://www.microway.com/hpc-tech-tips/intel-xeon-e5-2600-v3-haswell-processor-review/)
 5. [List of Nvidia graphics processing units](https://en.wikipedia.org/wiki/List_of_Nvidia_graphics_processing_units)
 6. [A Comparison between NVIDIA’s GeForce GTX 1080 and Tesla P100 for Deep Learning](https://medium.com/@alexbaldo/a-comparison-between-nvidias-geforce-gtx-1080-and-tesla-p100-for-deep-learning-81a918d5b2c7)
+7. [Tesla V100](https://www.nvidia.com/zh-cn/data-center/tesla-v100/)
