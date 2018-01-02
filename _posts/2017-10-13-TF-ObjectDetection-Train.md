@@ -90,7 +90,7 @@ Tensorflow Object Detection API 里自带了ssd, rfcnn, faster_rcnn 在 COCO 数
 
 ### 换测试图片
 如果你想测试 pre-train 的模型在新的图片上的效果，只需要修改 Notebook 中的 *TEST_IMAGE_PATHS*
-![Notebook model name](/assets/20171013/notebook.png "Notebook model name" )
+![Notebook image name](/assets/20171013/notebook-testimage.png "Notebook image name" )
 
 
 ## 参考文献

@@ -16,3 +16,10 @@ github_username:  laddiexu
 
 # Build settings
 markdown: kramdown
+
+# Add config for hit times support by leancloud
+leancloud:
+  enable: true
+  app_id: lNCEwoorTi8rS3x1Kh4b27ii-gzGzoHsz
+  app_key: XcYIXUHsr4Eg6Rj92g4PgJAS
+  
