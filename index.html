@@ -12,7 +12,7 @@ layout: default
       <li>
         <span class="post-meta">{{ post.modify | date: "%b %-d, %Y" }}</span>
         {% if site.leancloud.enable %}
-         <span id="{{ post.url | prepend: site.baseurl }}" class="leancloud_visitors" data-flag-title="{{ post.title }}">
+         <span id="{{ post.url | prepend: site.baseurl }}" class="leancloud_visitors post-meta" data-flag-title="{{ post.title }}">
           <span> | 阅读次数:  </span>
           <span class="leancloud-visitors-count"></span>
         </span>
