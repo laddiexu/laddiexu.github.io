@@ -1,22 +1,31 @@
 ---
 layout: post
-title: "一分钟读懂Apple的边缘计算"
-description: "一分钟读懂Apple的边缘计算"
+title: "Apple的边缘计算 - Core ML"
+description: "Apple的边缘计算 - Core ML"
 category: tech
-tags: [Azure, GPU, Nvidia]
+tags: [iOS, Core ML, 边缘计算]
 modify: 2018-01-01 23:00:00
 ---
-Appl
-AI是目前所有公司都不能回避的话题了，有公司选择做云，有公司选择做开发工具，
 
-Apple 在WWDC 2017（2017-6-5）上发布的iOS11，其中包含了一些和AI相关的API, 特别是Core ML.下图是官方对Core ML的解释：
+Apple 在WWDC 2017（2017-6-5）上发布的iOS11，其中包含了一些和AI相关的API, 其中一个就是Core ML.
+下图是官方对Core ML的解释： 
+
 ![Notebook image name](/assets/20180101/coreml0.png "Core ML" )
-简单来说，CoreML就是能够加载训练好的模型的一种框架，使用这个框架就可以很方便的在你的app中使用机器学习神经网络的模型。Core ML可以看做一个模型的转换器，可以将一个 ML Model 格式的模型文件自动生成一些类和方法，可以直接使用这些类去做分析，让我们更简单的在app中使用训练好的模型。
-Core ML支持的模型必须是Apple自己定义的mlmodel格式。
+
+简单来说，Core ML 就是能够加载机器学习神经网络的模型的一种框架，使用这个框架就可以很方便的在你的app中使用已经训练好的模型了。
+从实现上看，Core ML 就是一个模型的转换器，可以将一个Apple自定义的mlmodel格式的模型文件自动生成一些类和方法，这样在app中就可以直接使用这些类去做分析，更简单的使用模型进行预测推断了。
+
+模型从哪里来：
+Core ML 
+
+缺点：
+1. 从目前的实现来看，Core ML是通过Xcode编译集成到app里面的，所以应该无法实现动态的更新模型，只能通过更新app来更新模型。
+2. Core ML定义为支持预测推断阶段，目前无法支持训练阶段，
+
+## 其它API： Vision
 
 
-
-
+![Notebook image name](/assets/20180101/coreml.png "Core ML Architecture" )
 
 
 http://yulingtianxia.com/blog/2017/06/19/Core-ML-and-Vision-Framework-on-iOS-11/
