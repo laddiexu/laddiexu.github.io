@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "微软的的“边缘计算”之一 - Azure IoT Edge"
+title: "微软的的“边缘计算” - Azure IoT Edge"
 description: "微软的边缘计算 - Azure IoT Edge"
 category: tech
 tags: [边缘计算, intellegent edge ]
@@ -19,7 +19,7 @@ Azure IoT Edge 主要包含以下三个部分：
 2. IoT Edge 运行时(IoT Edge Runtime):
   IoT Edge 运行时也是安装在 Edge 设备上的，主要是负责对 Edge 模块的管理和通信功能的。下图就是 Edge Runtime 的位置和功能的示意图。
   ![Notebook image name](/assets/20180509/runtime.png "IoT Edge Runtime" )
-  IoT Edge Runtime 其实就是两个 Container,一个叫 EdgeAgent， 一个叫 EdgeHub. EdgeAgent 主要负责管理模块，包括下载，启动，删除 Edge 模块，监控和汇报健康状态等。EgdeHub 主要负责通信，包括模块和模块之间的通信，Edge 设备和云端的通信等。微软计划在正式发布之后会开源 Edge 运行时的代码。
+  IoT Edge Runtime 其实就是两个 Container,一个叫 EdgeAgent， 一个叫 EdgeHub。 EdgeAgent 主要负责管理模块，包括下载，启动，删除 Edge 模块，监控和汇报健康状态等。EgdeHub 主要负责通信，包括模块和模块之间的通信，Edge 设备和云端的通信等。微软计划在正式发布之后会开源 Edge 运行时的代码。
 
 3. IoT Edge 云端接口(IoT Edge cloud interface):
   IoT Edge 的云端接口集成在 IoT Hub 服务当中，用来远程监控和 IoT Edge 的设备。以及动态部署 Edge 模块到设备上。下图就是云端接口的位置和功能的示意图。
