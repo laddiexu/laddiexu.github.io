@@ -1,7 +1,8 @@
 {% if site.leancloud.enable %}
   <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.7.3/dist/av-min.js"></script>
-  <script>var { Query, User } = AV;
+  <script>
+    var { Query, User } = AV;
     AV.init("{{site.leancloud.app_id}}", "{{site.leancloud.app_key}}");</script>
   <script>
     function showHitCount(Counter) {
@@ -19,7 +20,7 @@
       // 批量查询
       query.containedIn('url', entries);
       query.find()
-        .done(function (results) {
+        .then(function (results) {
           var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
 
           if (results.length === 0) {
@@ -45,7 +46,7 @@
             }
           }
         })
-        .fail(function (object, error) {
+        .catch(function (error) {
           console.log("Error: " + error.code + " " + error.message);
         });
     }
@@ -105,6 +106,7 @@
     }
 
     $(function() {
+
       var Counter = AV.Object.extend("count");
       if ($('.leancloud_visitors').length == 1) {
         // in post.html, so add 1 to hit counts
