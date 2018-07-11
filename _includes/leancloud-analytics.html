@@ -65,9 +65,11 @@
         then(function(results) {
           if (results.length > 0) {//说明LeanCloud中已经记录了这篇文章
             var counter = results[0];
-            counter.fetchWhenSave(true);
+            // counter.fetchWhenSave(true);
             counter.increment("hits");// 将点击次数加1
-            counter.save()
+            counter.save(null,{
+              fetchWhenSave:true
+            })
             .then(function(counter) {
                 var $element = $(document.getElementById(url));
                 $element.find('.leancloud-visitors-count').text(counter.get('hits'));
@@ -86,7 +88,9 @@
             newcounter.set("title", title);// 把文章标题
             newcounter.set("url", url); // 文章url
             newcounter.set("hits", 1); // 初始点击次数：1次
-            newcounter.save()
+            newcounter.save(null,{
+              fetchWhenSave:true
+            })
             .then(function(newcounter) {
               // 上传到LeanCloud服务器中
                 var $element = $(document.getElementById(url));
