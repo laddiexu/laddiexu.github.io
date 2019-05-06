@@ -39,7 +39,7 @@ python setup.py install --yes USE_AVX_INSTRUCTIONS --yes DLIB_USE_CUDA
 在Windows上的配置安装相对麻烦一点,按照以下步骤进行
 1. 需要安装 VS 2015 的 C/C++ 编译器，我的实践经验是不支持 VS 2017。
 2. 安装 CMake x64 版。
-3. 运行以下命令j进行编译安装 dlib:
+3. 运行以下命令进行编译安装 dlib:
 ```
 git clone https://github.com/davisking/dlib.git
 cd dlib
