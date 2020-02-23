@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "读书笔记 - 向上汇报"
+title: "C# Entity Framework GroupBy 性能问题"
 description: "C# Entity Framework GroupBy 性能问题"
 category: tech
 tags: [C#, EF, GroupBy]
-modify: 2020-02-20 00:00:00
+modify: 2020-02-23 00:00:00
 ---
 用 C# / .NET 写后端代码的开发者，一般都会用 Entity Framework (以下简称 EF )来进行 DB 访问的，我最近遇到了一个性能上的问题，还是很常见的，在这里记录一下问题和解决的方法，希望给大家一个帮助，如果有更好的方法，也希望大家能写告诉我，先谢过各位啦~
 
