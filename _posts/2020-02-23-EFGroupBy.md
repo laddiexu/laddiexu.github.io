@@ -12,7 +12,13 @@ modify: 2020-02-23 00:00:00
 ## 问题
 要解决的问题很简单很常见，从 StatusHistory 这张表中查出所有状态变化的最后的一条记录。StatusHistory 这张表中包含有 Id, ServiceId, FromStaus, ToStatus, Timestamp, InitiatedBy。这几个字段也很直白，从名字就能明白含义。根据这个问题，直接的写法就如下：
 ``` C#
-var result = await this.Context.StatusHistory.GroupBy(item => new { item.ServiceId, item.FromStatus, item.ToStatus }).Select(group => group.OrderByDescending(i => i.Timestamp).FirstOrDefault()).ToListAsync();
+var result = await this.Context.StatusHistory
+                    .GroupBy(item => new { 
+                            item.ServiceId,
+                            item.FromStatus, 
+                            item.ToStatus })
+                    .Select(group => group.OrderByDescending(i => i.Timestamp).FirstOrDefault())
+                    .ToListAsync();
 ```
 性能表现：在Azure SQL Datebase 上，**当这张表的数据到达 8000 左右的时候，这个 query 居然需要运行 8 秒左右。**
 
@@ -26,7 +32,9 @@ var result = await this.Context.StatusHistory.GroupBy(item => new { item.Service
 ``` C#
 var list = await this.Context.StatusHistory.ToListAsync();
 
-var result = list.GroupBy(item => new { item.ServiceId, item.FromStatus, item.ToStatus }).Select(group => group.OrderByDescending(i => i.Timestamp).FirstOrDefault()).ToList();
+var result = list.GroupBy(item => new { item.ServiceId, item.FromStatus, item.ToStatus })
+                 .Select(group => group.OrderByDescending(i => i.Timestamp).FirstOrDefault())
+                 .ToList();
 ```
 ### 方案二：改用 SQL Partition By 
 这个问题如果直接用 SQL 来写的话，应该是用 Partition By 更合适的。但是 EF 不支持 Partition By 和 ROW_NUMBER(), 所以我认为更好的方法是直接运行一个 SQL Query。
